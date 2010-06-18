@@ -22,5 +22,5 @@ In your JavaScript:
 
 ## Options
 	{
-		placeholderClassname: "placeholder"
+		placeholderClassName: "placeholder"
 	}
