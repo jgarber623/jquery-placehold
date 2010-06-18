@@ -3,7 +3,7 @@ A jQuery plugin to enable the HTML5 "placeholder" attribute in all browsers
 
 
 ## Requirements
-* jQuery: http://jquery.com/ (1.4.2 or greater is recommended)
+* [jQuery](http://jquery.com/) (1.4.2 or greater is recommended)
 * Firefox < 3.7, Safari < 4, any version of Internet Explorer
 
 
