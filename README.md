@@ -21,4 +21,6 @@ In your JavaScript:
 
 
 ## Options
-* placeholderClassname: "placeholder"
+	{
+		placeholderClassname: "placeholder"
+	}

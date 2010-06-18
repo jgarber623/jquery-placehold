@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<title>jQuery.placehold() plugin example</title>
+	
+	<style type="text/css" media="screen">
+		body {
+			color: #333;
+			font: bold 26px Helvetica, Arial, sans-serif;
+			padding: 50px 0;
+		}
+		
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		li {
+			margin: 0 0 40px 0;
+			padding: 0;
+		}
+		
+		h1, form {
+			margin: 0 auto;
+			width: 680px;
+		}
+		
+		h1 {
+			font-size: 40px;
+			margin-bottom: 40px;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 4px;
+		}
+		
+		input, textarea {
+			border: 2px solid #999;
+			font: inherit;
+			padding: 8px;
+			width: 540px;
+		}
+		
+		textarea {
+			height: 100px;
+		}
+		
+		form *.something-temporary {
+			font-style: italic;
+			color: #aaa;
+		}
+		
+		form *::-webkit-input-placeholder {
+			font-style: italic;
+			color: #aaa;
+		}
+	</style>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.placehold-0.1.js"></script>
+	
+	<script type="text/javascript">
+		$().ready( function() {
+			$( "input, textarea" ).placehold({
+				placeholderClassName: "something-temporary"
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<h1>jQuery.placehold() plugin example</h1>
+	
+	<form>
+		<ul>
+			<li><label>First name</label><input type="text" name="first_name" placeholder="Enter your first name..." /></li>
+			<li><label>Last name</label><input type="text" name="last_name" placeholder="Enter your first name..." /></li>
+			<li><label>Comment</label><textarea name="comment" placeholder="Enter your comment..."></textarea></li>
+		</ul>
+	</form>
+	
+</body>
+</html>
