@@ -7,13 +7,14 @@
 ;(function($) {
 	$.fn.placehold = function( options ) {
 		var opts = $.extend( {}, $.fn.placehold.defaults, options );
+		var supported = $.fn.placehold.is_supported();
 		
 		return this.each( function() {
-			if ( !( "placeholder" in document.createElement( "input" ) ) ) {
+			if ( !supported ) {
 				var placeholder_attr = $( this ).attr( "placeholder" );
 				
 				if ( placeholder_attr ) {
-					var elem = $( this )
+					var elem = $( this ), elem_is_password = ( elem.attr( "type" ) == "password" );
 					
 					if ( !elem.val() || elem.val() == placeholder_attr ) {
 						elem.addClass( opts.placeholderClassName ).val( placeholder_attr );
@@ -42,6 +43,10 @@
 			}
 		});
 	};
+	
+	$.fn.placehold.is_supported = function() {
+		return "placeholder" in document.createElement( "input" );
+	}
 	
 	$.fn.placehold.defaults = {
 		placeholderClassName: "placeholder"
