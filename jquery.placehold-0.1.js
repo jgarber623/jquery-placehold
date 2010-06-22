@@ -11,11 +11,9 @@
 		
 		return this.each( function() {
 			if ( !supported ) {
-				var placeholder_attr = $( this ).attr( "placeholder" );
+				var elem = $( this ), placeholder_attr = elem.attr( "placeholder" );
 				
 				if ( placeholder_attr ) {
-					var elem = $( this ), elem_is_password = ( elem.attr( "type" ) == "password" );
-					
 					if ( !elem.val() || elem.val() == placeholder_attr ) {
 						elem.addClass( opts.placeholderClassName ).val( placeholder_attr );
 					}
