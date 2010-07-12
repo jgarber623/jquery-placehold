@@ -1,5 +1,5 @@
 /************************************************************************************
-** jQuery Placehold version 0.1
+** jQuery Placehold version 0.2
 ** (cc) Jason Garber (http://sixtwothree.org and http://www.viget.com)
 ** Licensed under the CC-GNU GPL (http://creativecommons.org/licenses/GPL/2.0/)
 *************************************************************************************/
@@ -69,7 +69,7 @@
 	
 	$.fn.placehold.is_supported = function() {
 		return "placeholder" in document.createElement( "input" );
-	}
+	};
 	
 	$.fn.placehold.defaults = {
 		placeholderClassName: "placeholder"
