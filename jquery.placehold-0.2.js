@@ -6,8 +6,8 @@
 
 ;(function($) {
 	$.fn.placehold = function( options ) {
-		var opts = $.extend( {}, $.fn.placehold.defaults, options );
-		var supported = $.fn.placehold.is_supported();
+		var opts = $.extend( {}, $.fn.placehold.defaults, options ),
+			supported = $.fn.placehold.is_supported();
 		
 		function toggle( arr ) {
 			for ( i = 0; i < arr.length; i++ ) {
@@ -17,7 +17,9 @@
 		
 		return this.each( function() {
 			if ( !supported ) {
-				var elem = $( this ), placeholder_attr = elem.attr( "placeholder" ), is_password = ( elem.attr( "type" ) == "password" ) ? true : false;
+				var elem = $( this ),
+					placeholder_attr = elem.attr( "placeholder" ),
+					is_password = ( elem.attr( "type" ) == "password" ) ? true : false;
 				
 				if ( placeholder_attr ) {
 					if ( !elem.val() || elem.val() == placeholder_attr ) {
