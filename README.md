@@ -16,11 +16,7 @@ In your HTML:
 In your JavaScript:
 
 	$().ready( function() {
-		$( "input, textarea" ).placehold();
+		$( "input, textarea" ).placehold( placeholderClassName );
 	});
 
-
-## Options
-	{
-		placeholderClassName: "placeholder"
-	}
+The placeholderClassName is optional (default: placeholder)

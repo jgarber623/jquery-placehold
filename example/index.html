@@ -64,10 +64,8 @@
 	<script type="text/javascript" src="../jquery.placehold-0.2.js"></script>
 	
 	<script type="text/javascript">
-		$().ready( function() {
-			$( "input, textarea" ).placehold({
-				placeholderClassName: "something-temporary"
-			});
+		$(function() {
+			$( "input, textarea" ).placehold( "something-temporary" );
 		});
 	</script>
 </head>
