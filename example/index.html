@@ -61,13 +61,11 @@
 	</style>
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="../jquery.placehold-0.2.js"></script>
+	<script type="text/javascript" src="../jquery.placehold-0.3.js"></script>
 	
 	<script type="text/javascript">
 		$().ready( function() {
-			$( "input, textarea" ).placehold({
-				placeholderClassName: "something-temporary"
-			});
+			$( "input, textarea" ).placehold( "something-temporary" );
 		});
 	</script>
 </head>
@@ -83,7 +81,7 @@
 			<li><label>Comment</label><textarea name="comment" placeholder="Enter your comment..."></textarea></li>
 		</ul>
 		
-		<button type="submit">BUTTON!!!</button>
+		<input type="submit" value="Submit that bro!" />
 	</form>
 	
 </body>

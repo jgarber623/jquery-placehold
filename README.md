@@ -1,5 +1,5 @@
 # jquery-placehold
-A jQuery plugin to enable the HTML5 "placeholder" attribute in all browsers
+A jQuery plugin that enables the [HTML5 `placeholder` attribute](http://www.w3.org/TR/html5/common-input-element-attributes.html#the-placeholder-attribute) in all browsers.
 
 
 ## Requirements
@@ -16,11 +16,7 @@ In your HTML:
 In your JavaScript:
 
 	$().ready( function() {
-		$( "input, textarea" ).placehold();
+		$( "input, textarea" ).placehold( "placeholderClassName" );
 	});
 
-
-## Options
-	{
-		placeholderClassName: "placeholder"
-	}
+`placeholderClassName` is an optional string and defaults to "placeholder."
