@@ -1,8 +1,11 @@
-/************************************************************************************
-** jQuery Placehold version 0.3
-** (cc) Jason Garber (http://sixtwothree.org and http://www.viget.com)
-** Licensed under the CC-GNU GPL (http://creativecommons.org/licenses/GPL/2.0/)
-*************************************************************************************/
+/**
+ * @name jQuery placehold (https://github.com/jgarber623/jquery-placehold)
+ * @version 0.4
+ * @author Jason Garber
+ * @copyright (cc) Jason Garber (http://sixtwothree.org and http://www.viget.com)
+ * 
+ * Licensed under the CC-GNU GPL (http://creativecommons.org/licenses/GPL/2.0/)
+ */
 
 ;(function($) {
 	$.fn.placehold = function( placeholderClassName ) {
