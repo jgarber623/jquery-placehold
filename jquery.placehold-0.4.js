@@ -27,7 +27,7 @@
 					$elem.addClass( placeholderClassName ).val( placeholder_attr );
 				}
 				
-				if ( $elem.attr( "type" ) == "password" ) {
+				if ( $elem.is( ":password" ) ) {
 					var $pwd_shiv = $( "<input />", {
 						"class": $elem.attr( "class" ) + " " + placeholderClassName,
 						"value": placeholder_attr
