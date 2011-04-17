@@ -23,7 +23,7 @@
 				placeholder_attr = $elem.attr( "placeholder" );
 			
 			if ( placeholder_attr ) {
-				if ( !$elem.val() || $elem.val() == placeholder_attr ) {
+				if ( $elem.val() === "" || $elem.val() == placeholder_attr ) {
 					$elem.addClass( placeholderClassName ).val( placeholder_attr );
 				}
 				
@@ -39,7 +39,7 @@
 					});
 					
 					$elem.bind( "blur.placehold", function() {
-						if ( !$elem.val() ) {
+						if ( $elem.val() === "" ) {
 							toggle( $elem, $pwd_shiv );
 						}
 					});
@@ -54,7 +54,7 @@
 						}
 					},
 					"blur.placehold": function() {
-						if ( !$elem.val() ) {
+						if ( $elem.val() === "" ) {
 							$elem.addClass( placeholderClassName ).val( placeholder_attr );
 						}
 					}
