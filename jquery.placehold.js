@@ -1,6 +1,5 @@
 /**
  * @name jQuery placehold (https://github.com/jgarber623/jquery-placehold)
- * @version 0.4
  * @author Jason Garber
  * @copyright (cc) Jason Garber (http://sixtwothree.org and http://www.viget.com)
  * 
