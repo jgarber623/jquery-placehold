@@ -4,7 +4,7 @@ A jQuery plugin that enables the [HTML5 `placeholder` attribute](http://www.w3.o
 
 ## Requirements
 
-* [jQuery](http://jquery.com/) (1.5.1 or greater)
+* [jQuery](http://jquery.com/) (1.11.2 or newer)
 * Firefox < 3.7, Safari < 4, Internet Explorer < 10
 
 ## Usage
