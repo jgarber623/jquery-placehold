@@ -3,7 +3,7 @@
 var exec = require('child_process').exec,
 	pkg = require('../package.json'),
 	preamble = '/*!\n' +
-		' * @name jQuery placehold (' +  pkg.homepage + ')\n' +
+		' * @name jQuery placehold ' +  pkg.version + ' (' +  pkg.homepage + ')\n' +
 		' * @author ' + pkg.author.name + '\n' +
 		' * @copyright (cc) ' + pkg.author.name + ' (' + pkg.author.url + ' and http://www.viget.com)\n' +
 		' * \n' +
