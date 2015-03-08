@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+
+	<title>jQuery.placehold() plugin example</title>
+
+	<style>
+		body {
+			color: #333;
+			font: bold 26px Helvetica, Arial, sans-serif;
+			padding: 50px 0;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 0 0 40px 0;
+			padding: 0;
+		}
+
+		h1, form {
+			margin: 0 auto;
+			width: 680px;
+		}
+
+		h1 {
+			font-size: 40px;
+			margin-bottom: 40px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 4px;
+		}
+
+		input,
+		textarea {
+			border: 2px solid #999;
+			font: inherit;
+			padding: 8px;
+			width: 540px;
+		}
+
+		textarea {
+			height: 100px;
+		}
+
+		form .something-temporary {
+			color: #aaa;
+			font-style: italic;
+		}
+
+		form :-moz-placeholder {
+			color: #aaa;
+			font-style: italic;
+		}
+
+		form ::-webkit-input-placeholder {
+			color: #aaa;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>jQuery.placehold() plugin example</h1>
+
+	<form>
+		<ul>
+			<li>
+				<label for="first_name">First name</label>
+				<input type="text" id="first_name" name="first_name" placeholder="Enter your first name…">
+			</li>
+			<li>
+				<label for="last_name">Last name</label>
+				<input type="text" id="last_name" name="last_name" placeholder="Enter your first name…">
+			</li>
+			<li>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" placeholder="Enter your password…">
+			</li>
+			<li>
+				<label for="comment">Comment</label>
+				<textarea id="comment" name="comment" placeholder="Enter your comment…"></textarea>
+			</li>
+		</ul>
+
+		<input type="submit" value="Submit that bro!">
+	</form>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="src/jquery.placehold.js"></script>
+
+	<script>
+		$().ready( function() {
+			$('input, textarea').placehold('something-temporary');
+		});
+	</script>
+
+</body>
+</html>

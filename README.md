@@ -11,13 +11,17 @@ A jQuery plugin that enables the [HTML5 `placeholder` attribute](http://www.w3.o
 
 In your HTML:
 
-	<input type="text" name="phone" placeholder="+1 (555) 555-5555" />
-	<textarea name="comment" placeholder="Four score and seven years ago..."></textarea>
+	<input placeholder="+1 (555) 555-5555">
+	<textarea placeholder="Four score and seven years ago…"></textarea>
 
 In your JavaScript:
 
 	$().ready( function() {
-		$( 'input, textarea' ).placehold( 'placeholderClassName' );
+		$('input, textarea').placehold('placeholderClassName');
 	});
 
 `placeholderClassName` is an optional string and defaults to "placeholder."
+
+## License
+
+The jQuery placehold plugin is licensed under the [GNU General Public License, version 2](http://www.gnu.org/licenses/gpl-2.0.html).
