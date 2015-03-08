@@ -1,0 +1,24 @@
+{
+  "name": "jquery-placehold",
+  "version": "1.0.1",
+  "homepage": "https://github.com/jgarber623/jquery-placehold",
+  "authors": [
+    "Jason Garber <jason@sixtwothree.org> (http://sixtwothree.org)"
+  ],
+  "description": "A jQuery plugin that enables the HTML5 placeholder attribute in browsers lacking native support.",
+  "main": "dist/jquery.placehold.js",
+  "keywords": [
+    "html5",
+    "jquery-plugin",
+    "placeholder"
+  ],
+  "license": "GNU General Public License, version 2",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jgarber623/jquery-placehold.git"
+  }
+}
