@@ -1,6 +1,6 @@
 {
   "name": "jquery-placehold",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A jQuery plugin that enables the HTML5 placeholder attribute in browsers lacking native support.",
   "main": "dist/jquery.placehold.js",
   "scripts": {
