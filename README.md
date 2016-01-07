@@ -1,5 +1,7 @@
 # jquery-placehold
 
+[![npm version](https://badge.fury.io/js/jquery-placehold.svg)](https://badge.fury.io/js/jquery-placehold)
+
 A jQuery plugin that enables the [HTML5 `placeholder` attribute](http://www.w3.org/TR/html5/common-input-element-attributes.html#the-placeholder-attribute) in browsers lacking native support.
 
 ## Requirements
